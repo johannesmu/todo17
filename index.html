@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Simple todo list</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="app-view">
+      <header>
+        <h1 class="name">Get it done</h1>
+      </header>
+      <main>
+        <ul id="task-list">
+          <li>Get tea</li>
+          <li>Buy coffee</li>
+          <li data-status="1">Buy biscuits</li>
+        </ul>
+      </main>
+      <footer>
+        <form id="task-form" class="task-form">
+          <input type="text" class="task-input">
+          <button class="add" id="add">Add</button>
+        </form>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+    <template id="task-template">
+      <li data-status="0"></li>
+    </template>
+  </body>
+  
+</html>
